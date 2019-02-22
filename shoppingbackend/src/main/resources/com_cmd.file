@@ -1,0 +1,6 @@
+http://127.0.0.1:9200/_all/_search	
+logstash -f A:\elasticsearch\logstash-5.6.12\logstash-config.conf
+https://github.com/khozema-nullwala/online-shopping﻿
+http://localhost:5601 kibana
+curl -X DELETE http://localhost:9200/_all --------- in cmd 
+http://127.0.0.1:9200/product/_search/?size=1000&pretty=1 for all results

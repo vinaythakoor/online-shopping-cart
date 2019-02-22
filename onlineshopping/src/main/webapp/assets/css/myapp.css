@@ -1,0 +1,243 @@
+/*!
+ * Start Bootstrap - Shop Homepage (https://startbootstrap.com/template-overviews/shop-homepage)
+ * Copyright 2013-2017 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-shop-homepage/blob/master/LICENSE)
+ */
+html {
+	height: 100%;
+}
+
+body {
+	height: 100%;
+ font-family: 'Source Sans Pro', sans-serif;
+ }
+
+footer {
+	margin: 0;
+}
+
+.wrapper {
+	min-height: 100%;
+}
+
+.content {
+	padding-bottom: 60px; /* height of the footer*/
+}
+
+.footer {
+	bottom: 15px;
+	height: 60px;
+	margin: auto;
+}
+
+.dataTableImg {
+	height: 100px;
+	width: 100px;
+}
+
+.hbl {
+	color: red;
+}
+
+.adminDataTableImg {
+	height: 50px;
+	width: 50px;
+}
+
+/*Toggle Switch*/
+.switch {
+	height: 30px;
+	width: 50px;
+	position: relative;
+	display: inline-block;
+}
+
+.switch input {
+	display: none;
+}
+
+.slider {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	cursor: pointer;
+	background-color: #ccc;
+	border-radius: 30px;
+	transition: .5s;
+}
+
+.slider:before {
+	position: absolute;
+	background-color: #fff;
+	height: 20px;
+	width: 20px;
+	content: "";
+	left: 5px;
+	bottom: 5px;
+	border-radius: 50%;
+	transition: .5s;
+}
+
+input:checked+.slider {
+	background-color: #1863E6;
+}
+
+input:checked+.slider:before {
+	transform: translatex(20px);
+}
+
+/* -------- Cart css ---------*/
+.table>tbody>tr>td, .table>tfoot>tr>td {
+	vertical-align: middle;
+}
+
+@media screen and (max-width: 600px) {
+	table#cart tbody td .form-control {
+		width: 20%;
+		display: inline !important;
+	}
+	.actions .btn {
+		width: 36%;
+		margin: 1.5em 0;
+	}
+	.actions .btn-info {
+		float: left;
+	}
+	.actions .btn-danger {
+		float: right;
+	}
+	table#cart thead {
+		display: none;
+	}
+	table#cart tbody td {
+		display: block;
+		padding: .6rem;
+		min-width: 320px;
+	}
+	table#cart tbody tr td:first-child {
+		background: #333;
+		color: #fff;
+	}
+	table#cart tbody td:before {
+		content: attr(data-th);
+		font-weight: bold;
+		display: inline-block;
+		width: 8rem;
+	}
+	table#cart tfoot td {
+		display: block;
+	}
+	table#cart tfoot td .btn {
+		display: block;
+	}
+}
+
+.cartImg {
+	width: 100px;
+	height: 100px;
+}
+
+.unavailable {
+	color: red;
+}
+
+.redError {
+	color: red;
+}
+
+/*------------------*/
+.bootbox .modal-header {
+	display: block;
+}
+
+*:focus {
+	outline: none;
+}
+
+::-moz-focus-inner {
+	border: 0;
+}
+
+/*navbar*/
+.my-nav {
+	margin-left: -15px;
+	margin-right: -15px;
+	border-top-color: #565151;
+	border-bottom-color: #565151;
+	border-style: solid;
+	border-width: thin;
+}
+
+.my-nav .navbar-brand {
+	text-decoration-color: #fff;
+	color: #d2d8d6;
+	font-size:18px;
+}
+
+.my-nav .navbar-brand:hover {
+	color: #76ff03;
+}
+
+.my-nav .nav-link {
+	color: #d2d8d6;
+	font-size:15px;
+}
+
+.my-nav .nav-item.active {
+	color: black;
+}
+
+.my-nav .nav-link:hover {
+	color: #76ff03;
+}
+
+.my-nav .dropdown .nav-link {
+	color: #d2d8d6;
+	text-decoration: none;
+}
+
+.my-nav .dropdown .nav-link:hover {
+	color: #76ff03;
+	text-decoration: none;
+}
+
+.my-nav .dropnav {
+	padding: 4px 15px;
+}
+
+.my-nav .dropnav.active {
+	border-bottom: 2px solid #76ff03;
+}
+
+.my-nav .droplink {
+	font-size: 16px;
+}
+
+.my-nav .dropdown .dropdown-menu a {
+	text-decoration: none;
+	color: #d2d8d6;
+	background-color: black;
+}
+
+.my-nav .dropdown .dropdown-menu a:hover {
+	color: #76ff03;
+	background-color: black;
+	border-color: #d2d8d6;
+}
+
+.dropdown-menu::before, .dropdown-menu::after {
+	border: none;
+	content: none;
+}
+
+.checkboxname{
+	font-size: 13px;
+}
+/******/
+@media ( min-width : 992px) {
+	body {
+		
+	}
+}

@@ -1,0 +1,38 @@
+input {
+  jdbc { 
+    jdbc_driver_library => "C:\Users\Vinay\.m2\repository\mysql\mysql-connector-java\8.0.13\mysql-connector-java-8.0.13.jar"
+    jdbc_driver_class => "com.mysql.cj.jdbc.Driver"
+    jdbc_connection_string => "jdbc:mysql://localhost:3306/onlineshopping"
+    jdbc_user => "root"
+    jdbc_password => ""
+    statement => "SELECT * FROM user_detail where id>:sql_last_value"
+use_column_value => true
+tracking_column => id
+last_run_metadata_path => "C:\Users\Vinay\.logstash_jdbc_last_run"
+schedule => "* * * * * *"
+    }
+}
+
+input {
+  jdbc { 
+    jdbc_driver_library => "C:\Users\Vinay\.m2\repository\mysql\mysql-connector-java\8.0.13\mysql-connector-java-8.0.13.jar"
+    jdbc_driver_class => "com.mysql.cj.jdbc.Driver"
+    jdbc_connection_string => "jdbc:mysql://localhost:3306/onlineshopping"
+    jdbc_user => "root"
+    jdbc_password => ""
+    statement => "SELECT * FROM product where row_update_time>:sql_last_value"
+use_column_value => true
+tracking_column => row_update_time
+schedule => "* * * * * *"
+last_run_metadata_path => "C:\Users\Vinay\.logstash_jdbc_last_run1"
+ }
+}
+output {
+  stdout { codec => rubydebug }
+  elasticsearch {
+  "hosts" => "localhost:9200"
+  "index" => "user_detail"
+  "document_type" => "user"
+  document_id => "%{id}" 
+  }
+}

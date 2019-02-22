@@ -1,0 +1,142 @@
+ 
+.titlebar {
+	font-size: 18px;
+	padding: 6px 50px;
+	color: #60f702;
+	background-color: #232323;
+}
+
+.titlename {
+	font-size: 25px;
+    color: black; 
+}
+
+.titlename:hover {
+	color: #626363;
+}
+
+.productname {
+	color: black;
+	/* font-weight: bold;  */
+}
+
+.titlename {
+	font-size: 13px;
+	color: black;
+}
+
+.productname:hover {
+	color: #626363;
+}
+
+.productprice {
+	font-size: 14px;
+	color: black;
+}
+
+.categoryname {
+	font-size: 18px;
+	color: black;
+}
+
+.categoryname:hover {
+	color: #626363;
+}
+
+.doubleangle:hover {
+	color: #626363;
+}
+
+.titleprice {
+	font-size: 12px;
+	color: black;
+}
+
+.productprice:hover {
+	color: #626363;
+}
+
+.brandname {
+	font-size: 14px;
+}
+
+.zoom {
+	transition: transform .2s;
+}
+
+.zoom:hover {
+  -ms-transform: scale(1.02); /* IE 9 */
+  -webkit-transform: scale(1.02); /* Safari 3-8 */
+  transform: scale(1.02); 
+}
+
+.pagination {
+    display: -ms-flexbox;
+    display: flex;
+    padding-left: 0;
+    list-style: none;
+    border-color: gray;
+    border-radius: 0.25rem;
+    justify-content: center;
+    
+  }
+  
+  
+.pagination>li>a, .pagination>li>span {
+    color: black;
+    background-color: white;
+    margin-left: 5px;
+    border-radius: 2px;
+    font-size: 13px;
+    padding: 5px 10px;
+    border-color: black;
+    text-decoration: none;
+    border: 1px solid #ddd;
+} 
+
+.pagination>li>a:hover, .pagination>li>span:hover, .pagination>li>a:focus, .pagination>li>span:focus {
+    color: #fff;
+    background-color: #6db91c;
+    border-color: green; 
+    border: 1px solid #ddd;
+}
+
+.page-item.active .page-link {
+    z-index: 1;
+    color: white;
+    border: 1px solid #ddd;
+    background-color: rgb(100, 209, 12);
+  }
+  
+.pagination > .active > a, .pagination > .active > a:focus, .pagination > .active > a:hover, .pagination > .active > span, .pagination > .active > span:focus, .pagination > .active > span:hover {
+    background-color: rgb(100, 209, 12);
+    border-color: organge;
+}
+
+.page-item.disabled .page-link{
+    color: white;
+    background-color: gray;
+    border-color: green;
+}
+  
+.pagination>.disabled>span, .pagination>.disabled>span:hover, .pagination>.disabled>span:focus, .pagination>.disabled>a, .pagination>.disabled>a:hover, .pagination>.disabled>a:focus {
+    color: #000; background-color: rgb(71, 64, 64); border-color: #000; cursor: not-allowed;
+    border-color: organge;
+}
+
+#paginrow {
+	background-color: white;
+}   
+
+.tNone{
+    text-decoration: none;
+}
+
+.teleHeight{
+    height: 120px;
+}
+
+.mobileHeight{
+    height: 170px;
+}
+ 
